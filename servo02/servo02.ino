@@ -58,8 +58,8 @@ void loop() {
       Serial.print (pwm);
       Serial.print(" , ");
 
-      Input1 = map(pwm,1000,2000,-255,255);
-      Setpoint1 = map(pot,0,1023,-255,255);
+      Setpoint1 = map(pwm,1000,2000,-255,255);
+      Input1 = map(pot,0,1023,-255,255);
       PID1.Compute();
 
       Serial.println(Output1);    
