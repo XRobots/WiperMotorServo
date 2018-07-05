@@ -1,6 +1,6 @@
 volatile unsigned long pwm;
-volati
-le boolean done;unsigned long start;
+volatile boolean done;
+unsigned long start;
 
 unsigned long currentMillis;
 
@@ -35,8 +35,8 @@ void loop() {
       
       if (!done)
           return;                         
-          Serial.println (pwm);
-          done = false;      
+      Serial.println (pwm);
+      done = false;      
 
   } // end of timed event
 
